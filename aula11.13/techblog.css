@@ -1,0 +1,72 @@
+*  { margin: 0px; padding: 0px; }
+
+/* DICA DO PROF: belezinha? no máximo 3 fontes, porque com 3 fontes é mais fácil de testar */
+body { font-size: 1em; font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;  background-color: #DFE0DF;}
+
+/* header area */ 
+#header-area { background-color: #f7b600; text-align: center; padding: 15px; }
+
+.padding-header { padding: 10px; }
+
+/* main area */
+
+#main-area { width: 920px; margin: 0px auto; padding: 15px; }
+
+#posts-area { width: 660px; float: left; }
+
+#side-area { width: 240px; float: right; }
+
+.post { padding: 20px; margin-bottom: 20px; background-color: #DFE0DF; }
+
+.side-content { background-color: #DFE0DF; padding: 10px; margin-bottom: 20px; }
+
+.side-post { font-size: 0.8em; padding: 10px; border-bottom: 1px dotted #594317; }
+
+#footer-area { clear: both; text-align: center; padding: 15px; background-color: #594317; color: #DFE0DF; }
+
+/* formatações de estilo */
+
+h1 {color: #594317; font-size: 2.5em; }
+
+h2 { color: #f7b600;  margin-bottom: 15px; 
+text-transform: uppercase;}
+
+h3 { color: #402e32; 
+text-transform: uppercase; }
+
+.fonte-branca { color: #dfe0df; }
+
+a { text-decoration: none; text-transform: capitalize; margin-right: 20px; font-size: 1.2em;color: #dfe0df;
+color: #402e32; }
+
+.data-postagem { font-size: 0.8;
+border-bottom: 1px solid #594317;
+padding-bottom: 10px; margin-bottom: 10px;
+display: block; }
+
+img { border-radius: 8px; }
+
+p { font-size: 1.1em; text-align: justify; margin-top: 10px; }
+
+
+.fds :hover {
+    color: white;
+    animation: gira 2s linear infinite;
+}
+
+.fds2:hover {
+    color: white;
+    animation: gira 2s linear infinite;
+}
+
+@keyframes gira {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-1000px) rotate(360deg);
+    }
+    100% {
+        transform: translateX(0px) rotate(-360deg);
+    }
+}
