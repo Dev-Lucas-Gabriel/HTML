@@ -1,0 +1,21 @@
+*  { margin: 0px; padding: 0px; }
+
+
+body {background-color: aqua;}
+
+
+.container { background-color: bisque; margin: 0px auto; width: 600px; height: 600px; display: flex;
+flex-direction: row; flex-wrap: wrap; flex-flow: row wrap; justify-content: space-evenly; align-items: center ;
+align-content: space-evenly; }
+
+div { padding: 60px; background-color: black;
+color: white; border-radius: 15px; font-weight: bold; border: 2px solid white}
+
+
+#span02 {font-size: 34px;}
+
+#span04 {font-size: 52px;}
+
+.item.selected { order: 1;}
+
+.item { align-self: stretch;}
