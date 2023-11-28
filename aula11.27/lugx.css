@@ -1,0 +1,10 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+.container { display: grid; grid-template-rows: 100px 100vh 150px repeat(3, 450px) 100vh 100px;}
+
+nav { background-color: aqua; }
+header { background-color: yellow; }
+section { background-color: violet; }
+main { background-color: aquamarine; border: 2px solid black; }
+article { background-color: brown; }
+footer { background-color: chartreuse; }

@@ -1,0 +1,23 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {background-color: #d9d9d9;
+    display: grid; width: 100vw; 
+    height: 100vh;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 5% 70% 5% 10%;
+    grid-template-areas: 
+             
+
+.bloco-um {background-color: blue; grid-area: bum;}
+.bloco-dois {background-color:blueviolet ; grid-area: bdois;}
+.bloco-tres {background-color: aqua; grid-area: btres;}
+.bloco-quatro {background-color: violet; grid-area: bquatro;}
+.bloco-cinco {background-color: aquamarine; grid-area: bcinco;}
+.bloco-seis {background-color: rebeccapurple; grid-area: bseis;}
+.bloco-sete {background-color: steelblue; grid-area: bsete;}
+.bloco-oito {background-color: purple; grid-area: boito;}
+.bloco-nove {background-color: palevioletred; grid-area: bnove;}
+
+
+
+

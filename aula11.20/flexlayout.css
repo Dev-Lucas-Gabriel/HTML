@@ -1,1 +1,37 @@
 * { padding: 0px; margin: 0px;}
+
+body { background-color: #051249; color: #ffffff;
+display: flex; flex-direction: column; justify-content: space-between; height: 100vh;}
+
+.container-main {display: flex; justify-content: space-around; flex-wrap: wrap;}
+
+.section-width1 { width: 45vw; display: flex; flex-direction: column; align-items: flex-end;
+margin-right: 15px ;}
+
+.section-width2 { width: 45vw; display: flex; flex-direction: column; justify-content: space-between;}
+
+.div-width1 { width: 38vw; height: 40vh; border-radius: 8px;
+background-color: #448fae;}
+
+.div-width2 { width: 50%; height: 20vh; border-radius: 8px;
+background-color: #c54cbf; margin-top: 15px;}
+
+.div-bgcolor {background-color: #731ec2;}
+
+.div-div-estrutura {width: 80%; height: 20vh; background-color: #2d64f2; border-radius: 8px;}
+
+.div-container1 {display: flex; width: 60%; height: 40vh; flex-flow: column wrap;
+justify-content: space-between; margin: 10px 0px;}
+
+.div-div-width1 { width: 20vw; height: 40vh; background-color: #e28c41; border-radius: 8px; }
+
+.div-div-width2 { width: 10vw; height: 18vh; background-color: #376562; border-radius: 8px; margin-left: 20px;}
+
+.div-div-bgcolor {background-color: #c05250;}
+
+.section-container { width: 50vw;}
+
+.div-item {width: 50vw; height: 20vh; background-color: #898d8e; margin-top: 15px; border-radius: 8px;}
+
+
+
