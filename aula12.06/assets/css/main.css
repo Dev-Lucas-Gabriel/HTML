@@ -25,5 +25,24 @@ header {
 }
 */
 
+body { background-image: url('../images/bg-02.jpg'); background-size: cover; }
 
+.main {
+    height: 120vh;
+}
+
+.card {
+    max-width: 17rem;
+    height: 65%;
+    opacity: 75%;
+}
+
+.card-body {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.icon-size {
+    font-size: 55px;
+}
 
