@@ -1,0 +1,401 @@
+PROVA flex
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Example</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------
+
+CSS
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.item {
+    flex: 1;
+    border: 1px solid #333;
+    padding: 20px;
+    text-align: center;
+}
+
+--------------------------------------------------------------------------------------------------------
+
+Neste exemplo:
+
+display: flex; é aplicado à classe .container para transformá-la em um contêiner flexível.
+justify-content: space-around; alinha os itens com espaçamento uniforme ao redor.
+align-items: center; centraliza os itens verticalmente.
+flex: 1; é aplicado à classe .item para que todos os itens tenham o mesmo tamanho flexível.
+Você pode personalizar esse código conforme suas necessidades, adicionando mais itens, ajustando estilos, etc. Essa é apenas uma estrutura básica para começar com Flexbox.
+
+
+
+-----------------------------------------------------------------------------------------------
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Example</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Some sidebar content goes here.</p>
+        </aside>
+
+        <main class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+            <p>It can have multiple paragraphs or any other content.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------
+
+
+* { margin: 0px; padding: 0px;}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 200px; /* flex-grow, flex-shrink, flex-basis */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+
+
+Neste exemplo:
+
+Adicionamos um cabeçalho (<header>) e um rodapé (<footer>) para melhorar a estrutura do documento.
+O conteúdo principal é dividido em duas colunas: a barra lateral (<aside>) e o conteúdo principal (<main>).
+Utilizamos propriedades como flex: 0 0 200px; para definir a largura da barra lateral, e flex: 1; para fazer com que o conteúdo principal ocupe o restante do espaço disponível.
+Você pode ajustar este exemplo conforme necessário, adicionando mais conteúdo, estilos e personalizando o layout de acordo com seus requisitos específicos.
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Example</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Some sidebar content goes here.</p>
+        </aside>
+
+        <main class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+            <p>It can have multiple paragraphs or any other content.</p>
+        </main>
+
+        <section class="additional-content">
+            <h2>Additional Content</h2>
+            <p>This is an additional section of content.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+CSS
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    flex: 0 0 200px; /* flex-grow, flex-shrink, flex-basis */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.content, .additional-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.additional-content {
+    background-color: #e0e0e0;
+}
+
+
+Neste exemplo, adicionamos uma <section> chamada "Additional Content" com seu próprio estilo. A barra lateral e o conteúdo principal ainda são elementos principais do layout, mas agora há uma seção adicional. Sinta-se à vontade para ajustar o código conforme necessário para atender às suas necessidades específicas.
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+lAYOUT
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Layout Example</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area. It adapts to the available space.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+---------------------------------------------------------
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+
+-----------------------------------------------------------------------------------
+
+
+Claro, vou criar um exemplo básico de um layout responsivo usando Flexbox. Este layout terá um cabeçalho, uma barra de navegação, uma seção principal e um rodapé.
+
+HTML:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Layout Example</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area. It adapts to the available space.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+CSS (styles.css):
+
+css
+Copy code
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
+Neste exemplo:
+
+Utilizamos display: flex; para o contêiner principal (.container) e para a barra de navegação (nav ul).
+justify-content: space-around; é usado na barra de navegação para distribuir os itens uniformemente.
+align-items: center; e justify-content: center; são usados no contêiner principal para centralizar o conteúdo vertical e horizontalmente.
+O uso de min-height: 70vh; no contêiner principal garante que ele ocupe pelo menos 70% da altura da tela.
+margin-top: auto; no rodapé faz com que ele empurre para a parte inferior do contêiner principal, mesmo se o conteúdo for pequeno.
+Este é um exemplo básico e você pode expandi-lo conforme necessário para atender aos requisitos específicos do seu projeto.
+
+
+
+
+

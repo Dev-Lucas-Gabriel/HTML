@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 80vh;
+    background-color: cadetblue;
+    display: flex;
+    align-content: space-between;
+    
+}
+
+.caixa1 {
+ width: 100px;
+ border: 1px solid black;
+ height: 100px;
+ background-color: blue;
+}
+
+.caixa1:hover {
+ animation: fds 1s ease;
+}
+
+.caixa2 {
+ width: 100px;
+ border: 1px solid black;
+ height: 100px;
+ background-color: red;
+}
+
+.caixa3 {
+ width: 100px;
+ border: 1px solid black;
+ height: 100px;
+ background-color: green;
+}

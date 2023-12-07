@@ -1,0 +1,32 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+body { color: #242424; font-family: sans-serif; word-wrap: break-word; overflow-wrap: break-word; }
+
+h1, h2 { font-weight: 900; color: #000000; }
+
+.wrapper { width: 100vw; margin: 0px auto; }
+
+.container { width: 100%; max-width: 800px; margin: 0px auto; padding: 0px 20px; }
+
+.container-main { display: block; background-color: #ffffff; }
+
+section.module p { margin-bottom: 40px; }
+
+section.module:last-child { margin-bottom: 0px; }
+
+section.module h2 { margin-bottom: 40px; font-size: 32px; }
+
+section.module.content { padding: 40px 0px; background-color: #ece7d5; }
+
+section.module.parallax { display: flex; flex-direction: column; justify-content: center; height: 100vh !important; width: 100vw; position: relative; overflow: hidden; background-position: 50% 50%; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
+
+section.module.parallax01 { background-image: url(./images/av01.jpeg); }
+
+section.module.parallax02 { background-image: url(./images/av02.jpeg); }
+
+section.module.parallax03 { background-image: url(./images/av03.jpeg); }
+
+section.module.parallax h1 { color: #f1f1f1; text-align: center; font-size: 80px; z-index: 100; text-transform: uppercase; 
+text-shadow: 0 0 1em #242424, 0 0 0.2em #000000, 0 0 0.2em #242424 ; }
+
+section.module.parallax::after { content: ""; height: 100%; width: 100%; position: absolute; z-index: 10; background: linear-gradient(to bottom, #000000); }

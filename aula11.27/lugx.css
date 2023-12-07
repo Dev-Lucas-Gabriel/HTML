@@ -12,7 +12,20 @@ ul { list-style: none; }
 
 nav { display: grid; grid-template-columns: repeat(2, 1fr); justify-content: space-between; align-items: center;  }
 ul { display: grid; grid-template-columns: 1fr 1fr 1.5fr 1fr 1fr; list-style: none; place-items: center; }
-header { color: #fff!important;}
+header { color: #fff!important; display: grid;
+padding-left: 60px;
+grid-template-columns: 50% 50%;
+grid-template-rows: 50px 150px 150px 150px ;
+grid-template-areas: 
+            'headerH5 headerImg'
+            'headerH2 headerImg'
+            'headerP headerImg'
+            'headerForm headerImg';}
+.header-h5 { grid-area: headerH5;}
+.header-h2 { grid-area: headerH2;}
+.header-p { grid-area: headerP;}
+.header-form { grid-area: headerForm;}
+.header-img { grid-area: headerImg;}
 section { background-color: violet; }
 main { background-color: aquamarine; border: 2px solid black; }
 article { background-color: brown; }

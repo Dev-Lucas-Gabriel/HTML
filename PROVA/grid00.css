@@ -1,0 +1,15 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body { display: grid; height: 100vh;
+width: 80vw; margin: 0 auto  ;grid-template-rows: 15% 10% 60% 10%; grid-template-columns: 30% 70%;
+grid-template-areas:
+    'one one'
+    'two two'
+    'three four'
+    'five five' ; grid-gap: 10px;}
+
+header { background-color: aqua; grid-area: one; border: 2px solid black}
+menu { background-color: blue; grid-area: two; border: 2px solid black}
+div { background-color: blueviolet; grid-area: three; border: 2px solid black}
+article { background-color: cadetblue; grid-area: four; border: 2px solid black}
+footer { background-color: aquamarine; grid-area: five; border: 2px solid black}

@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 100px;
+    background-color: gray;
+}
+
+.main {
+    flex: 1;
+    background-color: aqua;
+    display: flex;
+    gap: 10px;
+
+    padding: 10px;
+}
+
+.message {
+    background-color: black;
+    height: 100%;
+    width: 20%;
+}
+
+.message-list {
+    background-color: brown;
+    height: 100%;
+    width: 20%;
+}
+
+.principal {
+    background-color: chartreuse;
+    height: 100%;
+    width: 60%;
+}
+
+.jose {
+    height: 100px;
+    background-color: gray;
+}

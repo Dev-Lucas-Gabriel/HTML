@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    height: 90vh;
+    width: 80vw;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+div {
+    width: 20vw;
+    height: 20vw;
+    background-color: aqua;
+    border: 2px solid black;
+    margin-top: 80px;
+    
+}

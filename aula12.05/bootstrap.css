@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container {
+    border: 2px solid black;
+}
+
+.row {
+    border: 2px dotted white;
+    padding: 10px;
+}
+
+.col {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 5px;
+}

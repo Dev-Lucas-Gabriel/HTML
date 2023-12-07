@@ -1,0 +1,71 @@
+* {
+    margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    background-color: white;
+    flex-wrap: wrap;    
+    text-align: center;
+    margin: 0 auto;
+}
+
+.img1 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.01.jpg"); background-repeat: no-repeat; background-size: cover;
+    width: 25%; height: 25%; font-family: sans-serif; color: #ffffff; margin: 0 auto;}
+
+.img2 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.02.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img3 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.03.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img4 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.04.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img5 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.05.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img6 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.06.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img7 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.07.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img8 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.08.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff}
+
+.img9 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.09.jpg");
+   width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img10 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.10.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img11 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.11.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img12 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.12.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img13 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.13.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img14 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.14.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img15 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.15.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+}
+
+.img16 {display: flex; align-items: center; justify-content: center; background-image: url("./imagens/questao01.16.jpg");
+    width: 25%; height: 25%; background-size: cover; font-family: sans-serif; color: #ffffff
+} 

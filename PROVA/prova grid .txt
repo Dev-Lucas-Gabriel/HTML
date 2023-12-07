@@ -1,0 +1,333 @@
+prova grid 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grid01.css">
+    <title>Grid Layout Example</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Main Content</h2>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+
+
+* { margin: 0px; padding: 0px;}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #555;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+Neste exemplo:
+
+Utilizei display: grid; para criar um layout baseado em grid para a barra de navegação, a seção principal e o rodapé.
+grid-template-columns: repeat(4, 1fr); define quatro colunas iguais para a barra de navegação.
+Na seção principal, grid-template-columns: repeat(3, 1fr); cria uma grade de três colunas.
+Cada item na grade (grid-item) tem uma cor de fundo para distinguir visualmente.
+Sinta-se à vontade para ajustar o exemplo conforme necessário para atender aos requisitos específicos do seu projeto.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grid Layout Example</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="main-content">
+            <h2>Main Content</h2>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Additional content goes here.</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Footer content goes here.</p>
+    </footer>
+</body>
+</html>
+
+
+* { margin: 0px; padding: 0px;}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #34495e;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2980b9;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #3498db;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.sidebar {
+    background-color: #e74c3c;
+    padding: 20px;
+    color: white;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+Neste exemplo:
+
+Usei cores diferentes para o cabeçalho, barra de navegação, conteúdo principal, barra lateral e rodapé.
+Adicionei uma barra lateral (<aside>) à direita da seção principal.
+Personalizei as cores e os estilos para criar uma aparência mais variada.
+Sinta-se à vontade para ajustar as cores e estilos conforme necessário para atender ao seu design específico.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+grid area
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./gridarea.css">
+    <title>Grid Area Layout Example</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="nav">Nav</nav>
+        <main class="main-content">Main Content</main>
+        <aside class="sidebar">Sidebar</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>
+
+
+ { margin: 0px; padding: 0px;}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header header"
+        "nav main-content"
+        "footer footer";
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #34495e;
+    color: white;
+    padding: 10px;
+}
+
+.main-content {
+    grid-area: main-content;
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #e74c3c;
+    padding: 20px;
+    color: white;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+Neste exemplo:
+
+Usei grid-template-areas para definir áreas nomeadas para o cabeçalho, a barra de navegação, a seção principal, a barra lateral e o rodapé.
+Cada elemento usa grid-area para especificar em qual área ele deve ser colocado.
+Adicionei cores distintas para cada área para melhor visualização.
+Este exemplo cria um layout responsivo usando Grid e destaca a flexibilidade e clareza proporcionadas pelo uso de grid-area. Sinta-se à vontade para ajustar conforme necessário para atender aos requisitos específicos do seu projeto.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------.
