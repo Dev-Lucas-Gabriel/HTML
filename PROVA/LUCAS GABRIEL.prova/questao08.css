@@ -1,0 +1,52 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: system-ui, sans-serif; }
+
+body { background-color: #000; }
+
+.container { width: 60vw; background-color: aqua; margin: 15px auto; height: calc(100vh - 30px); display: grid; grid-template-columns: repeat(4, 25%); grid-template-rows: repeat(3, 33.33%); grid-template-areas: 
+    'one one two trhee'
+    'four five six seven'
+    'eight eight nine nine'; }
+.one { grid-area: one; background-color: #fff; padding: 30px 15px 40px 15px; display: grid; }
+h2, h3, h4 { font-weight: 400; }
+.one span { color: #e9714c; font-size: 8px; margin-bottom: 30px; }
+.one p { font-size: 12px; margin-bottom: 6px; }
+
+.two { grid-area: two; }
+
+.three { grid-area: trhee; padding: 30px; background-color: #e5ad58; display: grid; }
+.three h2 { color: #fff; }
+.three span { font-size: 8px; color: #fff; display: block; }
+progress { background-color: #000; height: 2px; }
+progress::-webkit-progress-value {
+background: #000;
+}
+progress::-webkit-progress-bar {
+    background: #eeeeee;
+    border-radius: 2px;
+  }
+label { font-size: 8px; margin: 0; font-weight: 700; }
+
+.four { grid-area: four; background-color: #e5ad58; }
+
+.box { display: grid; align-items: center; justify-content: center; color: #fff; padding: 20px; }
+.box i { text-align: center; }
+.box h4 { font-weight: 400; text-align: center; }
+.box p { font-size: 10px; text-align: center; }
+
+
+.five { grid-area: five; background-color: #e9714c; }
+.six { grid-area: six; background-color: #000; }
+.seven { grid-area: seven; background-color: #fff; color: #000; }
+.eight { grid-area: eight; }
+
+.nine { grid-area: nine; background-color: #e9714c; padding: 30px; color: #fff; display: grid; grid-template-rows: repeat(2, 1fr); }
+.nine h5 { font-weight: 400; }
+.nine i { grid-row-start: 1; grid-row-end: 3; }
+.nine span { font-size: 8px; color: #fff; }
+.nine p { font-size: 8px; color: #fff; }
+.nine div { display: grid; grid-template-columns: 20% 40% 1fr; width: 70%; margin-bottom: 10px; }
+.nine div span { color: #000; font-weight: 700; }
+.nine div p { grid-column-start: 2; grid-column-end: 4; }
+
+.img-2 { background-image: url(./imagens/questao08.01.jpg); background-repeat: no-repeat; background-size: cover; }
+.img-1 { background-image: url(./imagens/questao08.02.jpg); background-repeat: no-repeat; background-size: cover; background-position: center; }

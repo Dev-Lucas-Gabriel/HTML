@@ -1,0 +1,15 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: system-ui,sans-serif; }
+
+body { display: flex; flex-wrap: wrap; height: 100vh; width: 100vw; }
+
+.yellow { background-color: #febb0d; width: 100vw; height: 10px;}
+
+.img-bg-1 { background-image: url(./imagens/questao07.01.jpg); background-size: cover; background-repeat: no-repeat; width: 60vw; height: 50vh; }
+.img-bg-2 { background-image: url(./imagens/questao07.02.jpg); background-size: cover; background-repeat: no-repeat; width: 40vw; height: calc(50vh - 10px); }
+
+.box-text { padding: 30px; display: flex; flex-direction: column; justify-content: space-between; }
+p { color: #121212; }
+button { margin-bottom: 30px; padding: 20px; width: 150px; border: none; background-color: #febb0d; text-transform: capitalize; font-weight: 600; border-radius: 2px; }
+.box-text#one { width: 40vw; }
+.box-text#two { width: 60vw;}
+h3 { text-transform: uppercase; }

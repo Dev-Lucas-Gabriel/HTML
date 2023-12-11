@@ -1,37 +1,17 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
 
-.container {
-    height: 80vh;
-    background-color: cadetblue;
-    display: flex;
-    align-content: space-between;
-    
-}
+/* body { background-color: #21292c; color: #f0f0f0; font-family: system-ui, -apple-system; height: 100vh; background-image: url('./imagens/questao04.bg.jpg'); background-repeat: no-repeat; background-size: cover; } */
 
-.caixa1 {
- width: 100px;
- border: 1px solid black;
- height: 100px;
- background-color: blue;
-}
+body { background-color: #21292c; color: #f0f0f0; font-family: system-ui, -apple-system; height: 100vh; }
 
-.caixa1:hover {
- animation: fds 1s ease;
-}
+main.container { display: flex; width: 80vw; margin: 0 auto; height: 100vh; align-items: center; }
 
-.caixa2 {
- width: 100px;
- border: 1px solid black;
- height: 100px;
- background-color: red;
-}
+figure { width: 30%; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; height: 500px; align-items: center; }
 
-.caixa3 {
- width: 100px;
- border: 1px solid black;
- height: 100px;
- background-color: green;
-}
+.icon { width: 150px; height: 150px; background-color: orange; display: flex; align-items: center; justify-content: center; border: 5px solid #fff; border-radius: 100%; }
+
+p { text-align: center; font-size: 12px; }
+
+hr { width: 100%; }
+
+button { background-color: #27c7ce; border: none; padding: 15px; border-radius: 20px; font-weight: bold; color: #fff; text-transform: uppercase; }

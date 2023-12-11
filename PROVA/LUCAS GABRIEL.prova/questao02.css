@@ -1,16 +1,24 @@
-*{
-    margin: 0px; 
-    padding: 0px; 
-    box-sizing: border-box;
-}
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: sans-serif; }
 
-body {
-    display: grid; 
-    height: 100vh;
-    width: 100vw;
-    grid-template-columns: 30% 30%;
-    grid-template-rows: 10% 10% 10% 10% 10%;
-    
-    
-}
+body { background: #1a1818; }
 
+.grid-container { display: grid; width: 80vw; margin: 90px auto; height: 70vh; grid-template-columns: 60vw 20vw; grid-template-rows: 100% }
+
+.grid-title { display: grid; grid-template-columns: 2% 1fr 93%; grid-template-areas: 'hr none h2'; }
+
+hr { color: #000; background-color: #000; grid-area: hr; }
+
+.main { background-color: aqua; display: grid; grid-template-columns: 50% 50%;; }
+.info { background-color: #fff; display: grid; align-items: center; padding: 40px; }
+.info h2 { font-size: 32px; text-transform: uppercase; grid-area: h2; }
+.info p { font-style: italic; }
+.info button { padding: 20px; background-color: #fff; border: 1.5px solid #121212; text-transform: uppercase; width: 150px; font-size: 12px; }
+.info span {  color: gold; }
+
+.nav { display: grid; justify-content: center; padding: 5px;  }
+.logo { margin-bottom: 10px; }
+.nav ul { list-style: none; display: grid;  }
+li { padding: 10px; background-color: #fff; text-transform: uppercase; margin-bottom: 10px; font-weight: 900; text-align: center; display: grid; justify-content: center; align-items: center; }
+#yellow { color: gold; }
+
+.image { background-image: url(./imagens/questao02.01.jpg); background-repeat: no-repeat; background-size: cover; }
