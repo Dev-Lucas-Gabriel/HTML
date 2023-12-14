@@ -1,0 +1,25 @@
+
+form {
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 100px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: large;
+}
+
+.footer1 {
+    width: 100vw;
+    height: 200px;
+}
+
+.footer2 {
+    width: 100vw;
+    height: 100px;
+}

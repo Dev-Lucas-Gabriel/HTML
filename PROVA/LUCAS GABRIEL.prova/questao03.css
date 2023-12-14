@@ -1,4 +1,4 @@
-* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: system-ui, sans-serif; }
+* { margin: 0px; padding: 0px; box-sizing: border-box; font-family: sans-serif; }
 
 body { background-color: #252627; }
 main.grid-container { background-color: #fff; width: 80vw; margin: 0px auto; margin-top: 10vh; height: 80vh;display: grid; grid-template-columns: repeat(2, 50%); grid-gap: 5px; }
